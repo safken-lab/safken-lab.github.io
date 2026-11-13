@@ -225,6 +225,7 @@ nav a[aria-current="page"] { color: var(--teal); text-decoration: underline; tex
 }
 
 .software-catalog { border-top: 1px solid var(--rule); }
+.software-preview:hover { border-color: var(--teal); }
 .software-title { font: 700 1.1rem/1.35 var(--body); letter-spacing: normal; }
 .software-links { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
 .software-links a { flex: 0 0 42px; }
