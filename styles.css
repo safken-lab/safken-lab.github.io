@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Source+Sans+3:wght@300&display=swap');
 
 :root {
   color-scheme: light;
@@ -47,7 +47,7 @@ nav a:hover { text-decoration: underline; }
 .menu { background: transparent; border: 1px solid var(--rule); border-radius: 4px; color: var(--navy); padding: 7px 14px; }
 
 .eyebrow { text-transform: uppercase; font-weight: 700; font-size: .74rem; letter-spacing: .105em; }
-h1, h2 { font-family: Roboto, Arial, sans-serif; font-weight: 300; }
+h1, h2 { font-family: "Source Sans 3", Arial, sans-serif; font-weight: 300; }
 .button { display: inline-flex; justify-content: space-between; align-items: center; gap: 18px; width: fit-content; color: var(--on-button); background: var(--button); border: 1px solid var(--button); padding: 11px 15px; border-radius: 4px; text-decoration: none; font-weight: 700; font-size: .88rem; }
 .button:hover { background: var(--button-hover); }
 .text-link { font-size: .88rem; font-weight: 700; }
