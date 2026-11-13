@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Roboto:wght@300&display=swap');
 
 :root {
   color-scheme: light;
@@ -47,7 +47,7 @@ nav a:hover { text-decoration: underline; }
 .menu { background: transparent; border: 1px solid var(--rule); border-radius: 4px; color: var(--navy); padding: 7px 14px; }
 
 .eyebrow { text-transform: uppercase; font-weight: 700; font-size: .74rem; letter-spacing: .105em; }
-h1, h2 { font-weight: 300; }
+h1, h2 { font-family: Roboto, Arial, sans-serif; font-weight: 300; }
 .button { display: inline-flex; justify-content: space-between; align-items: center; gap: 18px; width: fit-content; color: var(--on-button); background: var(--button); border: 1px solid var(--button); padding: 11px 15px; border-radius: 4px; text-decoration: none; font-weight: 700; font-size: .88rem; }
 .button:hover { background: var(--button-hover); }
 .text-link { font-size: .88rem; font-weight: 700; }
@@ -55,7 +55,7 @@ h1, h2 { font-weight: 300; }
 .section { padding-block: 66px 74px; }
 .section-head { display: flex; justify-content: space-between; align-items: baseline; gap: 26px; margin-bottom: 28px; }
 .section-head p { max-width: 34rem; color: var(--subtle); }
-h2 { font-size: clamp(2.85rem, 5vw, 4.45rem); line-height: 1; letter-spacing: -.025em; }
+h2 { font-size: clamp(2.85rem, 5vw, 4.45rem); line-height: 1; }
 h3 { line-height: 1.22; font-size: 1.16rem; }
 .band { background: var(--band); border-block: 1px solid var(--rule); }
 
@@ -106,7 +106,7 @@ nav a[aria-current="page"] { color: var(--teal); text-decoration: underline; tex
 .home-page .site-header { background: var(--welcome); }
 .home-main { flex: 1; min-height: 0; }
 .welcome { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); align-items: center; gap: clamp(24px, 3vw, 48px); padding-block: clamp(47px, 6vw, 88px); }
-.welcome h1 { font-size: clamp(2rem, 4.15vw, 3.9rem); line-height: 1.1; letter-spacing: -.025em; margin-bottom: 23px; }
+.welcome h1 { font-size: clamp(2rem, 4.15vw, 3.9rem); line-height: 1.1; margin-bottom: 23px; }
 .welcome h1 span { color: var(--teal); }
 .welcome p { max-width: 45rem; color: var(--subtle); font-size: clamp(1rem, 1.5vw, 1.13rem); }
 .welcome p + p { margin-top: 14px; }
