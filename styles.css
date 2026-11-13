@@ -149,7 +149,7 @@ nav a[aria-current="page"] { color: var(--teal); text-decoration: underline; tex
 :root[data-theme="dark"] .hero-art .theme-light-image { display: none; }
 .news { padding-block: 22px 26px; border-top: 1px solid var(--rule); }
 .news h2 { font-size: clamp(1.75rem, 3vw, 2.25rem); margin-bottom: 14px; }
-.news-scroll { max-height: clamp(14rem, 42vh, 20rem); overflow-y: auto; scrollbar-color: var(--control-border) transparent; padding-inline: 8px 12px; margin-inline-start: -8px; }
+.news-scroll { max-height: clamp(24rem, 65vh, 32rem); overflow-y: auto; scrollbar-color: var(--control-border) transparent; padding-inline: 8px 12px; margin-inline-start: -8px; }
 .news-scroll:focus-visible { outline: 2px solid var(--teal); outline-offset: 2px; }
 .news-list { list-style: none; margin: 0; padding: 0; }
 .news-list li { display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 12px; padding-block: 9px; }
