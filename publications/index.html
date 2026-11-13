@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Search papers and preprints from the Säfken Lab by year and research topic.">
+  <meta name="theme-color" content="#f7fafb">
+  <title>Publications · Säfken Lab</title>
+  <link rel="canonical" href="https://safken-lab.github.io/publications/">
+  <link rel="icon" type="image/svg+xml" href="../brand/favicon.svg">
+  <script src="../theme.js?v=9"></script>
+  <link rel="stylesheet" href="../styles.css?v=18">
+  <script src="../site.js?v=13" defer></script>
+</head>
+<body id="top">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="../"><img class="brand-logo" src="../brand/saefken-logo.svg" width="1714" height="455" alt="Säfken Lab"><img class="brand-logo theme-dark-image" src="../brand/saefken-logo-dark.svg" width="1714" height="455" alt="Säfken Lab"></a>
+      <nav id="navigation" aria-label="Main navigation">
+        <a href="../publications/" aria-current="page">Publications</a><a href="../people/">Team</a><a href="../software/">Software</a><a href="../teaching/">Teaching</a><a href="../contact/">Contact</a>
+      </nav>
+      <div class="header-controls">
+        <button class="theme-toggle" id="site-theme" type="button" aria-label="Dark mode" aria-pressed="false" title="Switch to dark mode" hidden><svg class="theme-moon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M20.8 14A8.8 8.8 0 0 1 10 3.2 9 9 0 1 0 20.8 14Z"/></svg><svg class="theme-sun" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M19 5l-1.5 1.5m-11 11L5 19"/></svg></button>
+        <button class="menu" type="button" aria-expanded="false" aria-controls="navigation" hidden>Menu</button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <div class="wrap section publications" id="publications">
+      <h1 class="publication-title">Publications</h1>
+        <section class="paper-year" aria-labelledby="papers-2026">
+          <h2 id="papers-2026">2026</h2>
+          <ul class="papers">
+          <li class="paper">
+            <figure class="paper-preview"><img src="../papers/figure-01.webp" width="369" height="167" loading="lazy" alt="Posterior transport plans and density contours"></figure>
+            <article>
+              <h3><a href="https://proceedings.mlr.press/v306/de26a.html">Variational Inference for Uncertain Optimal Transport via Sinkhorn Parametrization</a></h3>
+              <p class="paper-authors">Ananyapam De, Linus Bleistein, Anton Frederik Thielmann, Benjamin Säfken</p>
+              <p class="paper-venue">ICML · 2026</p>
+              <details class="paper-abstract">
+                <summary>Abstract summary</summary>
+                <p>Standard optimal transport produces a single plan for a fixed cost. This paper uses the Sinkhorn map to turn variational samples into transport plans that satisfy the marginal constraints. The method uses normalizing flows to estimate uncertainty over plans and achieves accuracy comparable to sampling approaches at lower computational cost in the reported experiments.</p>
+              </details>
+            </article>
+          </li>
+          <li class="paper">
+            <figure class="paper-preview"><img src="../papers/figure-02.webp" width="720" height="207" loading="lazy" alt="Feature encoding in the tabular transformer"></figure>
+            <article>
+              <h3><a href="https://proceedings.mlr.press/v300/thielmann26a.html">Beyond Black-Box Predictions: Identifying Marginal Feature Effects in Tabular Transformer Networks</a></h3>
+              <p class="paper-authors">Anton Frederik Thielmann, Arik Reuter, Benjamin Säfken</p>
+              <p class="paper-venue">AISTATS · 2026</p>
+              <details class="paper-abstract">
+                <summary>Abstract summary</summary>
+                <p>The authors adapt a tabular transformer to identify marginal feature effects while retaining its ability to model interactions. They justify the approach theoretically and use ablation studies to test the recovery of feature effects. In the reported benchmarks, the model can match black-box predictors while exposing these effects.</p>
+              </details>
+            </article>
+          </li>
+          <li class="paper">
+            <figure class="paper-preview"><img src="../papers/figure-03.webp" width="706" height="430" loading="lazy" alt="Numerical encoding with spline basis functions"></figure>
+            <article>
+              <h3><a href="https://arxiv.org/abs/2604.05635">From Uniform to Learned Knots: A Study of Spline-Based Numerical Encodings for Tabular Deep Learning</a></h3>
+              <p class="paper-authors">Manish Kumar, Anton Frederik Thielmann, Christoph Weisser, Benjamin Säfken</p>
+              <p class="paper-venue">arXiv preprint · 2026</p>
+              <details class="paper-abstract">
+                <summary>Abstract summary</summary>
+                <p>The study compares B-splines, M-splines, and integrated splines under several knot-placement schemes, including jointly learned knots. Results depend on the task and model backbone. Piecewise-linear encoding is robust for classification, while regression performance varies by spline family and knot strategy. Learned knots can increase training cost.</p>
+              </details>
+            </article>
+          </li>
+          <li class="paper">
+            <figure class="paper-preview"><img src="../papers/figure-04.webp" width="720" height="157" loading="lazy" alt="Predictive and uncertainty estimates in EviNAM"></figure>
+            <article>
+              <h3><a href="https://arxiv.org/abs/2601.08556">EviNAM: Intelligibility and Uncertainty via Evidential Neural Additive Models</a></h3>
+              <p class="paper-authors">Sören Schleibaum, Anton Frederik Thielmann, Julian Teusch, Benjamin Säfken, Jörg P. Müller</p>
+              <p class="paper-venue">arXiv preprint · 2026</p>
+              <details class="paper-abstract">
+                <summary>Abstract summary</summary>
+                <p>EviNAM combines evidential learning with neural additive models. A single forward pass estimates uncertainty from the data and uncertainty in the model while exposing feature contributions. The additive structure lets readers inspect the effects of individual predictors alongside uncertainty estimates.</p>
+              </details>
+            </article>
+          </li>
+          <li class="paper">
+            <figure class="paper-preview"><img src="../papers/figure-05.webp" width="338" height="167" loading="lazy" alt="From feature attribution to natural-language explanations"></figure>
+            <article>
+              <h3><a href="https://arxiv.org/abs/2605.26770">Quality Without Usefulness: LLM-Generated XAI Narratives as Trust Heuristics Rather Than Decision Aids</a></h3>
+              <p class="paper-authors">Fabian Lukassen, Jan Herrmann, Christoph Weisser, Alexander Silbersdorff, Benjamin Säfken, Thomas Kneib</p>
+              <p class="paper-venue">arXiv preprint · 2026</p>
+              <details class="paper-abstract">
+                <summary>Abstract summary</summary>
+                <p>This study tests whether natural-language explanations produced from explainable AI outputs actually help people make decisions. It examines how explanation quality, trust, and task performance relate. Its findings suggest that polished narratives can influence perceived trust even when they provide limited decision support.</p>
+              </details>
+            </article>
+          </li>
+          <li class="paper">
+            <figure class="paper-preview"><img src="../papers/figure-06.webp" width="687" height="251" loading="lazy" alt="Workflow for detecting and explaining changepoints"></figure>
+            <article>
+              <h3><a href="https://arxiv.org/abs/2601.02957">LLM-Augmented Changepoint Detection: A Framework for Ensemble Detection and Automated Explanation</a></h3>
+              <p class="paper-authors">Fabian Lukassen, Christoph Weisser, Michael Schlee, Manish Kumar, Anton Thielmann, Benjamin Säfken, Thomas Kneib</p>
+              <p class="paper-venue">arXiv preprint · 2026</p>
+              <details class="paper-abstract">
+                <summary>Abstract summary</summary>
+                <p>The paper combines an ensemble of statistical changepoint detectors with a language model. The ensemble pools evidence from methods with different strengths. The language model then generates explanations for the detected regime changes, addressing both detection and interpretation in a single workflow.</p>
+              </details>
+            </article>
+          </li>
+          <li class="paper">
+            <figure class="paper-preview"><img src="../papers/figure-07.webp" width="326" height="190" loading="lazy" alt="Forecasting and feature attribution explanation workflow"></figure>
+            <article>
+              <h3><a href="https://arxiv.org/abs/2601.02224">From XAI to Stories: A Factorial Study of LLM-Generated Explanation Quality</a></h3>
+              <p class="paper-authors">Fabian Lukassen, Jan Herrmann, Christoph Weisser, Benjamin Säfken, Thomas Kneib</p>
+              <p class="paper-venue">arXiv preprint · 2026</p>
+              <details class="paper-abstract">
+                <summary>Abstract summary</summary>
+                <p>A factorial experiment varies the forecasting model, attribution method, language model, and prompting strategy used to turn numerical feature attributions into explanations. The analysis examines which choices affect the perceived quality of the resulting narratives and informs the design of explanation pipelines.</p>
+              </details>
+            </article>
+          </li>
+          </ul>
+        </section>
+        <section class="paper-year" aria-labelledby="papers-2025">
+          <h2 id="papers-2025">2025</h2>
+          <ul class="papers">
+          <li class="paper">
+            <figure class="paper-preview"><img src="../papers/figure-08.webp" width="432" height="213" loading="lazy" alt="Mixture density network architectures with and without splines"></figure>
+            <article>
+              <h3><a href="https://doi.org/10.1515/ijb-2023-0134">Penalized regression splines in Mixture Density Networks</a></h3>
+              <p class="paper-authors">Quentin Edward Seifert, Anton Thielmann, Elisabeth Bergherr, Benjamin Säfken, Jakob Zierk, Manfred Rauh, Tobias Hepp</p>
+              <p class="paper-venue">The International Journal of Biostatistics · 2025</p>
+              <details class="paper-abstract">
+                <summary>Abstract summary</summary>
+                <p>The paper incorporates penalized regression splines into mixture density networks to model how an entire conditional distribution changes with predictors. Smoothing penalties control the flexibility of the fitted functions within the mixture model.</p>
+              </details>
+            </article>
+          </li>
+          </ul>
+        </section>
+        <section class="paper-year" aria-labelledby="papers-2024">
+          <h2 id="papers-2024">2024</h2>
+          <ul class="papers">
+          <li class="paper">
+            <figure class="paper-preview"><img src="../papers/node-gamlss-architecture.webp" width="834" height="533" loading="lazy" alt="NODE-GAMLSS architecture showing an oblivious decision tree and stacked tree ensembles for distributional parameters"></figure>
+            <article>
+              <h3><a href="https://openreview.net/forum?id=sWvTLlRkzy">NODE-GAMLSS: Interpretable Uncertainty Modelling via Deep Distributional Regression</a></h3>
+              <p class="paper-authors">Ananyapam De, Anton Frederik Thielmann, Benjamin Säfken</p>
+              <p class="paper-venue">NeurIPS Workshop on Bayesian Decision-making and Uncertainty · 2024</p>
+              <details class="paper-abstract">
+                <summary>Abstract summary</summary>
+                <p>NODE-GAMLSS uses additive ensembles of differentiable decision trees to estimate how features affect the location, scale, and shape of a response distribution. The model supports quantile prediction and inspection of individual feature effects. The authors benchmark it against other interpretable distributional models on simulated and real data.</p>
+              </details>
+            </article>
+          </li>
+          <li class="paper">
+            <figure class="paper-preview"><img src="../papers/figure-09.webp" width="525" height="334" loading="lazy" alt="Neural additive model architecture for distributional parameters"></figure>
+            <article>
+              <h3><a href="https://proceedings.mlr.press/v238/frederik-thielmann24a.html">Neural Additive Models for Location Scale and Shape: A Framework for Interpretable Neural Regression Beyond the Mean</a></h3>
+              <p class="paper-authors">Anton Frederik Thielmann, René-Marcel Kruse, Thomas Kneib, Benjamin Säfken</p>
+              <p class="paper-venue">AISTATS · 2024</p>
+              <details class="paper-abstract">
+                <summary>Abstract summary</summary>
+                <p>Neural Additive Models for Location, Scale and Shape extend interpretable additive networks beyond mean prediction. The model assigns additive feature effects to parameters of a response distribution, allowing users to inspect how predictors affect its location, spread, and shape.</p>
+              </details>
+            </article>
+          </li>
+          <li class="paper">
+            <figure class="paper-preview"><img src="../papers/figure-10.webp" width="563" height="231" loading="lazy" alt="Feature encoding and embeddings in Mambular"></figure>
+            <article>
+              <h3><a href="https://arxiv.org/abs/2408.06291">Mambular: A Sequential Model for Tabular Deep Learning</a></h3>
+              <p class="paper-authors">Anton Frederik Thielmann, Manish Kumar, Christoph Weisser, Arik Reuter, Benjamin Säfken, Soheila Samiee</p>
+              <p class="paper-venue">arXiv preprint · 2024</p>
+              <details class="paper-abstract">
+                <summary>Abstract summary</summary>
+                <p>Mambular treats the columns of tabular data as a sequence and processes them using structured state-space layers. The paper compares pooling strategies, feature interaction mechanisms, and bidirectional variants against tabular baselines. The results show that state-space models can be competitive for tabular prediction.</p>
+              </details>
+            </article>
+          </li>
+          <li class="paper">
+            <figure class="paper-preview"><img src="../papers/figure-11.webp" width="389" height="430" loading="lazy" alt="STREAM model architecture"></figure>
+            <article>
+              <h3><a href="https://aclanthology.org/2024.acl-short.41/">STREAM: Simplified Topic Retrieval, Exploration, and Analysis Module</a></h3>
+              <p class="paper-authors">Anton Frederik Thielmann, Arik Reuter, Benjamin Säfken, Christoph Weisser, Manish Kumar, Gillian Kant</p>
+              <p class="paper-venue">ACL · 2024</p>
+              <details class="paper-abstract">
+                <summary>Abstract summary</summary>
+                <p>STREAM provides tools to fit, evaluate, explore, and visualize topic models. The paper introduces evaluation measures based on identifying intruder words and makes additional datasets available for benchmarking. Its interactive tools are intended to help users interpret topics in large text collections.</p>
+              </details>
+            </article>
+          </li>
+          <li class="paper">
+            <figure class="paper-preview"><img src="../papers/figure-12.webp" width="354" height="376" loading="lazy" alt="Variational autoencoder architecture for transformer-based topic modelling"></figure>
+            <article>
+              <h3><a href="https://arxiv.org/abs/2403.03737">Probabilistic Topic Modelling with Transformer Representations</a></h3>
+              <p class="paper-authors">Arik Reuter, Anton Thielmann, Christoph Weisser, Benjamin Säfken, Thomas Kneib</p>
+              <p class="paper-venue">arXiv preprint · 2024</p>
+              <details class="paper-abstract">
+                <summary>Abstract summary</summary>
+                <p>This paper brings probabilistic modelling to topics discovered in transformer embedding spaces. It models the geometry of contextual representations to recover topic distributions and uses the resulting probabilistic representation to characterize documents and their topics.</p>
+              </details>
+            </article>
+          </li>
+          <li class="paper">
+            <figure class="paper-preview"><img src="../papers/figure-13.webp" width="345" height="258" loading="lazy" alt="GPTopic interactive topic representations"></figure>
+            <article>
+              <h3><a href="https://arxiv.org/abs/2403.03628">GPTopic: Dynamic and Interactive Topic Representations</a></h3>
+              <p class="paper-authors">Arik Reuter, Bishnu Khadka, Anton Thielmann, Christoph Weisser, Sebastian Fischer, Benjamin Säfken</p>
+              <p class="paper-venue">arXiv preprint · 2024</p>
+              <details class="paper-abstract">
+                <summary>Abstract summary</summary>
+                <p>GPTopic uses language models to create topic descriptions and supports iterative interaction with a topic model. It lets users examine and refine how topics are described, making the output easier to interpret than lists of representative words alone.</p>
+              </details>
+            </article>
+          </li>
+          <li class="paper">
+            <div class="paper-preview" aria-hidden="true"><span class="paper-badge">AStA</span></div>
+            <article>
+              <h3><a href="https://link.springer.com/article/10.1007/s10182-024-00503-4">Editorial special issue: Bridging the gap between AI and Statistics</a></h3>
+              <p class="paper-authors">Benjamin Säfken, David Rügamer</p>
+              <p class="paper-venue">AStA Advances in Statistical Analysis · 2024</p>
+              <details class="paper-abstract">
+                <summary>Editorial overview</summary>
+                <p>The editors introduce a special issue about the relationship between artificial intelligence and statistics, outlining the issue’s motivation and research contributions.</p>
+              </details>
+            </article>
+          </li>
+          </ul>
+        </section>
+        <section class="paper-year" aria-labelledby="papers-2023">
+          <h2 id="papers-2023">2023</h2>
+          <ul class="papers">
+          <li class="paper">
+            <figure class="paper-preview"><img src="../papers/figure-15.webp" width="500" height="500" loading="lazy" alt="Distributional regression parameter estimates and conditional distributions"></figure>
+            <article>
+              <h3><a href="https://doi.org/10.1016/j.ecosta.2021.07.006">Rage Against the Mean – A Review of Distributional Regression Approaches</a></h3>
+              <p class="paper-authors">Thomas Kneib, Alexander Silbersdorff, Benjamin Säfken</p>
+              <p class="paper-venue">Econometrics and Statistics · 2023</p>
+              <details class="paper-abstract">
+                <summary>Abstract summary</summary>
+                <p>This review surveys distributional regression, where covariates can affect several aspects of a response distribution. It compares approaches to modelling location, scale, shape, and other distributional properties, and discusses when these approaches are useful in applications.</p>
+              </details>
+            </article>
+          </li>
+          </ul>
+        </section>
+        <section class="paper-year" aria-labelledby="papers-2021">
+          <h2 id="papers-2021">2021</h2>
+          <ul class="papers">
+          <li class="paper">
+            <figure class="paper-preview"><img src="../papers/figure-16.webp" width="539" height="251" loading="lazy" alt="Estimated smoothing spline effect"></figure>
+            <article>
+              <h3><a href="https://www.jstatsoft.org/article/view/v099i08">Conditional Model Selection in Mixed-Effects Models with cAIC4</a></h3>
+              <p class="paper-authors">Benjamin Säfken, David Rügamer, Thomas Kneib, Sonja Greven</p>
+              <p class="paper-venue">Journal of Statistical Software · 2021</p>
+              <details class="paper-abstract">
+                <summary>Abstract summary</summary>
+                <p>The cAIC4 R package implements conditional Akaike information criteria for fitted mixed-effects models. The criteria account for uncertainty in estimated variance components. The package also provides stepwise model selection and the article demonstrates its use with practical examples.</p>
+              </details>
+            </article>
+          </li>
+          <li class="paper">
+            <div class="paper-preview" aria-hidden="true"><span class="paper-badge">Teaching Statistics</span></div>
+            <article>
+              <h3><a href="https://doi.org/10.1111/test.12243">Introductory data science across disciplines, using Python, case studies, and industry consulting projects</a></h3>
+              <p class="paper-authors">Johanna Lasser, Debsankha Manik, Alexander Silbersdorff, Benjamin Säfken, Thomas Kneib</p>
+              <p class="paper-venue">Teaching Statistics · 2021</p>
+              <details class="paper-abstract">
+                <summary>Abstract summary</summary>
+                <p>The paper describes an introductory data science course for students from different disciplines. It uses Python, case studies, and consulting projects to teach data handling, analysis, and collaboration while accommodating different levels of technical preparation.</p>
+              </details>
+            </article>
+          </li>
+          </ul>
+        </section>
+        <section class="paper-year" aria-labelledby="papers-2020">
+          <h2 id="papers-2020">2020</h2>
+          <ul class="papers">
+          <li class="paper">
+            <figure class="paper-preview"><img src="../papers/figure-17.webp" width="394" height="430" loading="lazy" alt="Geographic visualization of topic assignments"></figure>
+            <article>
+              <h3><a href="https://doi.org/10.21105/joss.02507">TTLocVis: A Twitter Topic Location Visualization Package</a></h3>
+              <p class="paper-authors">Gillian Kant, Christoph Weisser, Benjamin Säfken</p>
+              <p class="paper-venue">Journal of Open Source Software · 2020</p>
+              <details class="paper-abstract">
+                <summary>Abstract summary</summary>
+                <p>TTLocVis is a Python package for exploring where and when topics occur in geolocated Twitter data. Its workflow covers preprocessing, topic modelling, and visual exploration of the geographic and temporal patterns in a collection of tweets.</p>
+              </details>
+            </article>
+          </li>
+          <li class="paper">
+            <figure class="paper-preview"><img src="../papers/figure-18.webp" width="210" height="297" loading="lazy" alt="Learning Deep book cover artwork"></figure>
+            <article>
+              <h3><a href="https://doi.org/10.17875/gup2020-1338">Learning Deep: Perspectives on Deep Learning Algorithms and Artificial Intelligence</a></h3>
+              <p class="paper-authors">Benjamin Säfken, Alexander Silbersdorff, Christoph Weisser (editors)</p>
+              <p class="paper-venue">Göttingen University Press · 2020</p>
+              <details class="paper-abstract">
+                <summary>Book overview</summary>
+                <p>This edited collection grew out of the University of Göttingen’s Deep Learning Seminar. It brings together peer-reviewed student papers, including introductions to deep learning methods and research applications in artificial intelligence.</p>
+              </details>
+            </article>
+          </li>
+          </ul>
+        </section>
+        <section class="paper-year" aria-labelledby="papers-2016">
+          <h2 id="papers-2016">2016</h2>
+          <ul class="papers">
+          <li class="paper">
+            <figure class="paper-preview"><img src="../papers/figure-20.webp" width="650" height="361" loading="lazy" alt="Examples of smooth model components"></figure>
+            <article>
+              <h3><a href="https://doi.org/10.1080/01621459.2016.1180986">Smoothing Parameter and Model Selection for General Smooth Models</a></h3>
+              <p class="paper-authors">Simon N. Wood, Natalya Pya, Benjamin Säfken</p>
+              <p class="paper-venue">Journal of the American Statistical Association · 2016</p>
+              <details class="paper-abstract">
+                <summary>Abstract summary</summary>
+                <p>The authors develop a likelihood-based framework for selecting smoothing parameters in models with smooth covariate effects. Laplace approximate marginal likelihood estimates the penalties, and accounting for their uncertainty yields an improved model selection criterion. The framework covers a range of additive, distributional, and survival models.</p>
+              </details>
+            </article>
+          </li>
+          </ul>
+        </section>
+        <section class="paper-year" aria-labelledby="papers-2014">
+          <h2 id="papers-2014">2014</h2>
+          <ul class="papers">
+          <li class="paper">
+            <figure class="paper-preview"><img src="../papers/figure-21.webp" width="555" height="327" loading="lazy" alt="Conditional Akaike information criterion simulation results"></figure>
+            <article>
+              <h3><a href="https://doi.org/10.1214/14-EJS881">A unifying approach to the estimation of the conditional Akaike information in generalized linear mixed models</a></h3>
+              <p class="paper-authors">Benjamin Säfken, Thomas Kneib, Clara-Sophie van Waveren, Sonja Greven</p>
+              <p class="paper-venue">Electronic Journal of Statistics · 2014</p>
+              <details class="paper-abstract">
+                <summary>Abstract summary</summary>
+                <p>This paper develops conditional Akaike information criteria for generalized linear mixed models. Its unified formulation accounts for uncertainty in random effects and their covariance parameters. The results extend conditional model selection beyond Gaussian mixed models to several other response distributions.</p>
+              </details>
+            </article>
+          </li>
+          </ul>
+        </section>
+    </div>
+  </main>
+</body>
+</html>
