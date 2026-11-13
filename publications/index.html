@@ -40,8 +40,8 @@
               <p class="paper-venue">ICML · 2026</p>
               <details class="paper-abstract">
                 <summary>Abstract summary</summary>
-                <p>Optimal transport estimates how to match two distributions, for example by assigning mass from one set of points to another. When the matching costs are uncertain, several transport plans may be plausible. The authors turn the Sinkhorn algorithm into a differentiable map from unconstrained samples to entropy-regularized transport plans. This lets a normalizing flow learn a distribution over plans while every sample still obeys the required row and column sums.</p>
-                <p>In the experiments, the variational approximation recovered distributions similar to those produced by more expensive sampling methods. The computational savings let the authors apply the method to larger problems, where repeated posterior sampling can become impractical.</p>
+                <p>Optimal transport estimates how to match two distributions, for example by assigning mass from one set of points to another. When the matching costs are uncertain, several transport plans may be plausible. We turn the Sinkhorn algorithm into a differentiable map from unconstrained samples to entropy-regularized transport plans. This lets a normalizing flow learn a distribution over plans while every sample still obeys the required row and column sums.</p>
+                <p>In our experiments, the variational approximation recovered distributions similar to those produced by more expensive sampling methods. With these computational savings, we could apply the method to larger problems, where repeated posterior sampling can become impractical.</p>
               </details>
             </article>
           </li>
@@ -54,7 +54,7 @@
               <details class="paper-abstract">
                 <summary>Abstract summary</summary>
                 <p>Tabular transformers learn interactions between input features, which makes it difficult to read off the effect of a single variable. NAMformer uses a transformer for prediction and an additive representation for the marginal effects. A key design choice is to retain feature embeddings before the transformer mixes information across columns, so the model has a representation from which it can estimate individual effects.</p>
-                <p>The authors give conditions under which these effects can be identified and use ablation experiments to test whether the architecture recovers them when interactions are present. On their prediction benchmarks, the model can reach the performance of black-box alternatives while providing effect curves that a reader can inspect.</p>
+                <p>We give conditions under which these effects can be identified and use ablation experiments to test whether the architecture recovers them when interactions are present. On our prediction benchmarks, the model can reach the performance of black-box alternatives while providing effect curves that a reader can inspect.</p>
               </details>
             </article>
           </li>
@@ -66,8 +66,8 @@
               <p class="paper-venue">Transactions on Machine Learning Research · 2026</p>
               <details class="paper-abstract">
                 <summary>Abstract summary</summary>
-                <p>The study asks how a neural network should represent a continuous tabular feature before learning from it. It compares piecewise-linear encodings with B-splines, M-splines, and integrated splines across multilayer perceptrons, residual networks, and tabular transformers. The authors compare knots placed on an even grid, at data quantiles, using target information, or learned jointly with model weights.</p>
-                <p>Piecewise-linear encodings were a strong default for classification. In regression, the best encoding depended on the backbone, basis, knot placement, and resolution. The proposed parameterization made it possible to learn knot locations stably, but added training cost. The resolution experiments also showed that adding more basis functions often stopped helping beyond a moderate size.</p>
+                <p>We ask how a neural network should represent a continuous tabular feature before learning from it. We compare piecewise-linear encodings with B-splines, M-splines, and integrated splines across multilayer perceptrons, residual networks, and tabular transformers. We also compare knots placed on an even grid, at data quantiles, using target information, or learned jointly with model weights.</p>
+                <p>Piecewise-linear encodings were a strong default for classification. In regression, the best encoding depended on the backbone, basis, knot placement, and resolution. Our parameterization let us learn knot locations stably, but added training cost. Our resolution experiments also showed that adding more basis functions often stopped helping beyond a moderate size.</p>
               </details>
             </article>
           </li>
@@ -80,7 +80,7 @@
               <details class="paper-abstract">
                 <summary>Abstract summary</summary>
                 <p>EviNAM combines neural additive models with evidential learning to show which features influence a prediction and why that prediction may be uncertain. It estimates data noise and uncertainty about the model separately, alongside each feature’s contribution. These quantities are available in one forward pass at inference time, which avoids repeated sampling or evaluation of multiple fitted models.</p>
-                <p>The authors compare EviNAM with additive baselines on synthetic and real datasets. It achieves similar predictive performance to several baselines for regression in their experiments. For classification, it can express predicted class probabilities as feature contributions. A housing example illustrates how the feature-level uncertainty estimates can vary across the predictor range.</p>
+                <p>We compare EviNAM with additive baselines on synthetic and real datasets. It achieves similar predictive performance to several baselines for regression in our experiments. For classification, it can express predicted class probabilities as feature contributions. We use a housing example to illustrate how the feature-level uncertainty estimates can vary across the predictor range.</p>
               </details>
             </article>
           </li>
@@ -92,8 +92,8 @@
               <p class="paper-venue">arXiv preprint · 2026</p>
               <details class="paper-abstract">
                 <summary>Abstract summary</summary>
-                <p>Can a clear explanation of a forecast improve the decision that follows? The authors study that question in energy forecasting through five controlled experiments, covering 2,730 judgments across 60 test instances. They keep explanation quality high and evaluate whether explanations improve performance on tasks such as recognizing unreliable forecasts.</p>
-                <p>The explanations failed to improve accuracy on the five tasks and raised self-reported confidence. A placebo control attributed that increase to the presence of text. In an out-of-distribution detection task, the narratives made the language-model judge less likely to flag unreliable predictions. The study argues for evaluating explanation systems by the decisions they support as well as the quality of their prose.</p>
+                <p>Can a clear explanation of a forecast improve the decision that follows? We study that question in energy forecasting through five controlled experiments, covering 2,730 judgments across 60 test instances. We keep explanation quality high and evaluate whether explanations improve performance on tasks such as recognizing unreliable forecasts.</p>
+                <p>The explanations failed to improve accuracy on the five tasks and raised self-reported confidence. A placebo control attributed that increase to the presence of text. In an out-of-distribution detection task, the narratives made the language-model judge less likely to flag unreliable predictions. We argue for evaluating explanation systems by the decisions they support as well as the quality of their prose.</p>
               </details>
             </article>
           </li>
@@ -105,8 +105,8 @@
               <p class="paper-venue">arXiv preprint · 2026</p>
               <details class="paper-abstract">
                 <summary>Abstract summary</summary>
-                <p>Changepoint detectors look for shifts in the behaviour of a time series. Different detectors respond to different kinds of shifts, so choosing a single method in advance can be difficult. The proposed system combines the outputs of ten statistical detectors. A separate language-model stage writes explanations that relate the detected changes to potentially relevant events.</p>
-                <p>For private or specialized datasets, users can supply documents that the system retrieves when composing an explanation. The authors report more robust detection from the ensemble and illustrate the workflow in finance, political science, and environmental science. The explanations provide possible context for a detected change, which analysts can investigate further.</p>
+                <p>Changepoint detectors look for shifts in the behaviour of a time series. Different detectors respond to different kinds of shifts, so choosing a single method in advance can be difficult. Our system combines the outputs of ten statistical detectors. A separate language-model stage writes explanations that relate the detected changes to potentially relevant events.</p>
+                <p>For private or specialized datasets, users can supply documents that the system retrieves when composing an explanation. We report more robust detection from the ensemble and illustrate the workflow in finance, political science, and environmental science. The explanations provide possible context for a detected change, which analysts can investigate further.</p>
               </details>
             </article>
           </li>
@@ -118,8 +118,8 @@
               <p class="paper-venue">arXiv preprint · 2026</p>
               <details class="paper-abstract">
                 <summary>Abstract summary</summary>
-                <p>The authors test how to turn numerical explanations of time-series forecasts into readable prose. They vary four forecasting models, three feature-attribution conditions including a baseline without attributions, three language models, and eight prompting strategies. Two language-model judges score 660 explanations against four quality criteria.</p>
-                <p>In this experiment, the choice of language model had the largest influence on the scores. SHAP or LIME gave small gains over the baseline for expert-oriented explanations. Zero-shot prompts were competitive with more expensive self-consistency prompts, and chain-of-thought prompting lowered scores. The experiment measures explanation quality as judged by the evaluators, leaving downstream decision usefulness as a separate question.</p>
+                <p>We test how to turn numerical explanations of time-series forecasts into readable prose. We vary four forecasting models, three feature-attribution conditions including a baseline without attributions, three language models, and eight prompting strategies. Two language-model judges score 660 explanations against four quality criteria.</p>
+                <p>In this experiment, the choice of language model had the largest influence on the scores. SHAP or LIME gave small gains over the baseline for expert-oriented explanations. Zero-shot prompts were competitive with more expensive self-consistency prompts, and chain-of-thought prompting lowered scores. We measure explanation quality as judged by the evaluators, leaving downstream decision usefulness as a separate question.</p>
               </details>
             </article>
           </li>
@@ -136,8 +136,8 @@
               <p class="paper-venue">The International Journal of Biostatistics · 2025</p>
               <details class="paper-abstract">
                 <summary>Abstract summary</summary>
-                <p>A mixture density network predicts the parameters of several component distributions, whose combination can describe a skewed or multimodal response. As covariates change, mixture components can exchange roles, which makes their fitted parameter curves difficult to interpret. The authors use penalized spline basis functions to model how mixture parameters vary across the predictor range.</p>
-                <p>The paper compares this design with a conventional network in simulations and applies it to laboratory reference data. The spline penalties control the smoothness of the parameter curves, giving the analyst a way to inspect how the conditional distribution changes with a covariate.</p>
+                <p>A mixture density network predicts the parameters of several component distributions, whose combination can describe a skewed or multimodal response. As covariates change, mixture components can exchange roles, which makes their fitted parameter curves difficult to interpret. We use penalized spline basis functions to model how mixture parameters vary across the predictor range.</p>
+                <p>We compare this design with a conventional network in simulations and apply it to laboratory reference data. The spline penalties control the smoothness of the parameter curves, giving the analyst a way to inspect how the conditional distribution changes with a covariate.</p>
               </details>
             </article>
           </li>
@@ -150,7 +150,7 @@
               <details class="paper-abstract">
                 <summary>Abstract summary</summary>
                 <p>TNTM combines two approaches to topic modelling. Transformer embeddings capture words in context, while a probabilistic model represents a document as a mixture of topics. A variational autoencoder estimates the topic model efficiently, using the transformer representations to help define coherent topics.</p>
-                <p>The authors compare the method with existing models using topic coherence in embedding space and diversity across topics. In their experiments, TNTM produced competitive coherence and very high diversity. This is useful when fitting many topics, where a model can otherwise return several topics that describe nearly the same subject.</p>
+                <p>We compare the method with existing models using topic coherence in embedding space and diversity across topics. In our experiments, TNTM produced competitive coherence and very high diversity. This is useful when fitting many topics, where a model can otherwise return several topics that describe nearly the same subject.</p>
               </details>
             </article>
           </li>
@@ -168,7 +168,7 @@
               <details class="paper-abstract">
                 <summary>Abstract summary</summary>
                 <p>NODE-GAMLSS models the conditional distribution of a response using additive ensembles of differentiable oblivious decision trees. Each feature can contribute to parameters such as location, scale, and shape. The model learns those parameters jointly through the likelihood, which makes it possible to estimate conditional quantiles and inspect individual feature effects.</p>
-                <p>The authors compare NODE-GAMLSS with interpretable distributional regression methods on simulated and real datasets. Their experiments illustrate its ability to recover changing quantiles and display how predictors influence the fitted distribution. This is especially useful when variability or tail behaviour changes across observations.</p>
+                <p>We compare NODE-GAMLSS with interpretable distributional regression methods on simulated and real datasets. Our experiments illustrate its ability to recover changing quantiles and display how predictors influence the fitted distribution. This is especially useful when variability or tail behaviour changes across observations.</p>
               </details>
             </article>
           </li>
@@ -181,7 +181,7 @@
               <details class="paper-abstract">
                 <summary>Abstract summary</summary>
                 <p>An ordinary neural additive model assigns each predictor a small neural network and adds the outputs to predict a mean. NAMLSS extends that design to a chosen response distribution, with additive feature effects for its parameters. A feature can therefore influence the expected outcome, the spread, or another aspect of the distribution through different fitted curves.</p>
-                <p>The paper describes how to train the model using the likelihood and illustrates the architecture with simulated data from a flexible Johnson distribution. The examples show how the fitted effects can reveal changes in spread or shape that a mean prediction alone would miss.</p>
+                <p>We describe how to train the model using the likelihood and illustrate the architecture with simulated data from a flexible Johnson distribution. The examples show how the fitted effects can reveal changes in spread or shape that a mean prediction alone would miss.</p>
               </details>
             </article>
           </li>
@@ -193,8 +193,8 @@
               <p class="paper-venue">arXiv preprint · 2024</p>
               <details class="paper-abstract">
                 <summary>Abstract summary</summary>
-                <p>Mambular treats a table row as a sequence of feature embeddings and applies structured state-space layers to that sequence. These layers pass a learned state between features so that a prediction can reflect relationships among columns. The paper tests design choices such as pooling the feature outputs, processing features in both directions, and changing how features interact.</p>
-                <p>The authors benchmark the architecture against established tabular predictors. Their results show that sequence-based state-space models can work well on tabular tasks, and the comparisons help clarify which architectural choices contribute to that performance.</p>
+                <p>Mambular treats a table row as a sequence of feature embeddings and applies structured state-space layers to that sequence. These layers pass a learned state between features so that a prediction can reflect relationships among columns. We test design choices such as pooling the feature outputs, processing features in both directions, and changing how features interact.</p>
+                <p>We benchmark the architecture against established tabular predictors. Our results show that sequence-based state-space models can work well on tabular tasks, and the comparisons help clarify which architectural choices contribute to that performance.</p>
               </details>
             </article>
           </li>
@@ -206,8 +206,8 @@
               <p class="paper-venue">ACL · 2024</p>
               <details class="paper-abstract">
                 <summary>Abstract summary</summary>
-                <p>STREAM brings topic modelling, evaluation, and interactive exploration into a single Python workflow. It supports inspecting topic representations, comparing relationships between topics, and studying how topics relate to other variables. The authors include an option to use topic information in downstream interpretable models alongside ordinary tabular features.</p>
-                <p>The paper adds evaluation measures based on an intruder-word task, which tests whether an unrelated word can be distinguished from the words representing a topic. It also introduces benchmark datasets to support more systematic comparisons between topic models.</p>
+                <p>STREAM brings topic modelling, evaluation, and interactive exploration into a single Python workflow. It supports inspecting topic representations, comparing relationships between topics, and studying how topics relate to other variables. We include an option to use topic information in downstream interpretable models alongside ordinary tabular features.</p>
+                <p>We add evaluation measures based on an intruder-word task, which tests whether an unrelated word can be distinguished from the words representing a topic. We also introduce benchmark datasets to support more systematic comparisons between topic models.</p>
               </details>
             </article>
           </li>
@@ -220,7 +220,7 @@
               <details class="paper-abstract">
                 <summary>Abstract summary</summary>
                 <p>Topic models often describe a topic with a short list of frequent or distinctive words. GPTopic uses a language model to produce a fuller description from the evidence associated with a topic, such as representative documents and top words. A chat interface lets a reader ask questions about that evidence or refine the topic description as their analysis develops.</p>
-                <p>The paper presents the workflow and shows how a user can move from an initial overview to more targeted questions or revisions. Its contribution is a way to explore and explain topics interactively after fitting a topic model.</p>
+                <p>We present the workflow and show how a user can move from an initial overview to more targeted questions or revisions. We provide a way to explore and explain topics interactively after fitting a topic model.</p>
               </details>
             </article>
           </li>
@@ -232,8 +232,8 @@
               <p class="paper-venue">AStA Advances in Statistical Analysis · 2024</p>
               <details class="paper-abstract">
                 <summary>Editorial overview</summary>
-                <p>The editors introduce a special issue about how statistical ideas can help explain, evaluate, and extend modern machine learning. They place the contributions in the context of shared problems such as understanding fitted models, quantifying uncertainty, and making complex models easier to train or use.</p>
-                <p>The overview points readers to work on conditional feature importance, uncertainty in additive models, variational inference with flexible posteriors, and efficient hyperparameter tuning. It also covers applications such as distributional regression and modelling relationships between topics and document metadata.</p>
+                <p>We introduce a special issue about how statistical ideas can help explain, evaluate, and extend modern machine learning. We place the contributions in the context of shared problems such as understanding fitted models, quantifying uncertainty, and making complex models easier to train or use.</p>
+                <p>We highlight work on conditional feature importance, uncertainty in additive models, variational inference with flexible posteriors, and efficient hyperparameter tuning. We also cover applications such as distributional regression and modelling relationships between topics and document metadata.</p>
               </details>
             </article>
           </li>
@@ -250,8 +250,8 @@
               <p class="paper-venue">Econometrics and Statistics · 2023</p>
               <details class="paper-abstract">
                 <summary>Abstract summary</summary>
-                <p>Two groups can have similar average outcomes while differing in variability, lower-tail risk, or the probability of extreme values. This review surveys regression methods that let those features of an outcome distribution depend on covariates. It relates quantile and expectile regression to models that specify several distribution parameters or model a conditional distribution more directly.</p>
-                <p>The review discusses how model choice depends on the scientific question and what can be learned from different distributional targets. Examples include analysing tail risk and studying how predictor effects change across the outcome distribution. It also discusses how to interpret the resulting effects.</p>
+                <p>Two groups can have similar average outcomes while differing in variability, lower-tail risk, or the probability of extreme values. We survey regression methods that let those features of an outcome distribution depend on covariates. We relate quantile and expectile regression to models that specify several distribution parameters or model a conditional distribution more directly.</p>
+                <p>We discuss how model choice depends on the scientific question and what can be learned from different distributional targets. Examples include analysing tail risk and studying how predictor effects change across the outcome distribution. We also discuss how to interpret the resulting effects.</p>
               </details>
             </article>
           </li>
@@ -269,7 +269,7 @@
               <details class="paper-abstract">
                 <summary>Abstract summary</summary>
                 <p>Mixed-effects models can predict new measurements for subjects or groups that have already been observed. Conditional AIC evaluates models for that prediction setting by accounting for the fitted random effects. Estimating their variance introduces additional uncertainty, which affects the penalty used to compare models.</p>
-                <p>The article describes the cAIC4 R package, shows how to compute the criterion for fitted linear and generalized mixed models and additive mixed models, and demonstrates stepwise selection. The examples show how the criterion can guide choices about model terms and random-effect structure in practice.</p>
+                <p>We describe the cAIC4 R package, show how to compute the criterion for fitted linear and generalized mixed models and additive mixed models, and demonstrate stepwise selection. The examples show how the criterion can guide choices about model terms and random-effect structure in practice.</p>
               </details>
             </article>
           </li>
@@ -281,8 +281,8 @@
               <p class="paper-venue">Teaching Statistics · 2021</p>
               <details class="paper-abstract">
                 <summary>Abstract summary</summary>
-                <p>The article describes an introductory data science course at the University of Göttingen for students from multiple disciplines, including students new to programming and statistics. It starts with Python and data handling, moves through analysis and visualization in discipline-specific case studies, and finishes with a project using a real dataset.</p>
-                <p>Some projects were developed with industry and research partners so students could practise cleaning data, fitting and interpreting a basic statistical model, and communicating findings in context. The article explains the course structure, points to openly available teaching materials, and discusses early evaluations.</p>
+                <p>We describe an introductory data science course at the University of Göttingen for students from multiple disciplines, including students new to programming and statistics. It starts with Python and data handling, moves through analysis and visualization in discipline-specific case studies, and finishes with a project using a real dataset.</p>
+                <p>We developed some projects with industry and research partners so students could practise cleaning data, fitting and interpreting a basic statistical model, and communicating findings in context. We explain the course structure, point to openly available teaching materials, and discuss early evaluations.</p>
               </details>
             </article>
           </li>
@@ -300,7 +300,7 @@
               <details class="paper-abstract">
                 <summary>Abstract summary</summary>
                 <p>TTLocVis is a Python package for studying how topics in geolocated tweets vary across places and over time. Individual tweets are short, so the workflow can pool tweets by hashtag before fitting latent Dirichlet allocation. The package helps with preparing the text, fitting topic models, and associating the resulting topic estimates with geographic information.</p>
-                <p>Analysts can examine the output through maps, word clouds, and time series of topic prevalence. These views help connect themes in the text with when and where they appear. The article describes the software workflow and the types of analysis it supports.</p>
+                <p>Analysts can examine the output through maps, word clouds, and time series of topic prevalence. These views help connect themes in the text with when and where they appear. We describe the software workflow and the types of analysis it supports.</p>
               </details>
             </article>
           </li>
@@ -312,7 +312,7 @@
               <p class="paper-venue">Göttingen University Press · 2020</p>
               <details class="paper-abstract">
                 <summary>Book overview</summary>
-                <p>This edited volume brings together peer-reviewed projects from the University of Göttingen’s Deep Learning Seminar. It grew out of an effort to give graduate students in applied statistics experience with reading the literature, carrying out a research project, and communicating their results.</p>
+                <p>In this volume, we bring together peer-reviewed projects from the University of Göttingen’s Deep Learning Seminar. We compiled it to give graduate students in applied statistics experience with reading the literature, carrying out a research project, and communicating their results.</p>
                 <p>The opening contributions introduce deep learning concepts and algorithms. Later chapters examine applications and developments in artificial intelligence. The volume offers both a starting point for learning the methods and examples of how students investigated specific research questions.</p>
               </details>
             </article>
@@ -330,8 +330,8 @@
               <p class="paper-venue">Journal of the American Statistical Association · 2016</p>
               <details class="paper-abstract">
                 <summary>Abstract summary</summary>
-                <p>The paper develops a common fitting framework for models whose predictors contain smooth functions. It represents the functions with spline-like bases and uses quadratic penalties to control their complexity. The authors estimate the smoothing parameters using a Laplace approximation to the marginal likelihood, allowing the same approach to handle a range of likelihoods.</p>
-                <p>The framework quantifies uncertainty about the smoothing parameters and uses it to improve Akaike-based model selection. The examples cover generalized additive, distributional, survival, and multivariate models. The authors also show how supplying derivatives of a new likelihood can extend the framework to additional model families.</p>
+                <p>We develop a common fitting framework for models whose predictors contain smooth functions. We represent the functions with spline-like bases and use quadratic penalties to control their complexity. We estimate the smoothing parameters using a Laplace approximation to the marginal likelihood, allowing the same approach to handle a range of likelihoods.</p>
+                <p>The framework quantifies uncertainty about the smoothing parameters and uses it to improve Akaike-based model selection. The examples cover generalized additive, distributional, survival, and multivariate models. We also show how supplying derivatives of a new likelihood can extend the framework to additional model families.</p>
               </details>
             </article>
           </li>
@@ -348,8 +348,8 @@
               <p class="paper-venue">Electronic Journal of Statistics · 2014</p>
               <details class="paper-abstract">
                 <summary>Abstract summary</summary>
-                <p>Conditional AIC compares mixed-effects models when the goal is prediction for clusters whose random effects have already been estimated. The paper develops a common approach to estimating the optimism correction when the random-effects covariance is itself fitted. This extends conditional model selection to generalized mixed-effects models with several response distributions.</p>
-                <p>The authors recover the Gaussian case within the framework and derive criteria for Poisson and exponential responses. They discuss where the same derivation is unavailable and use simulation studies to examine how the estimators behave. The result helps distinguish which model comparison is appropriate for a given prediction target.</p>
+                <p>Conditional AIC compares mixed-effects models when the goal is prediction for clusters whose random effects have already been estimated. We develop a common approach to estimating the optimism correction when the random-effects covariance is itself fitted. This extends conditional model selection to generalized mixed-effects models with several response distributions.</p>
+                <p>We recover the Gaussian case within the framework and derive criteria for Poisson and exponential responses. We discuss where the same derivation is unavailable and use simulation studies to examine how the estimators behave. The result helps distinguish which model comparison is appropriate for a given prediction target.</p>
               </details>
             </article>
           </li>
